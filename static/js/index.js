@@ -71,7 +71,7 @@
             Plotly.newPlot('stacked-bar-chart', traces, layout);
         }
 
-        d3.json('../cleanDataset.json')
+        d3.json('./cleanDataset.json')
             .then(data => {
                 drawChart(data, 'Physical_Activity');
 
